@@ -49,7 +49,7 @@ public class Hook implements IXposedHookLoadPackage {
     public void Launcher_Hook(ClassLoader classLoader){
         Class<?> Launcher=XposedHelpers.findClass("com.mumu.launcher.Launcher",classLoader);
         if (Sp.Hook_getBoolean("LauncherAD")) {
-            XposedHelpers.findAndHookMethod(Launcher, "q3", new XC_MethodHook() {
+            XposedHelpers.findAndHookMethod(Launcher, "x3", new XC_MethodHook() {
                 @Override
                 protected void afterHookedMethod(MethodHookParam param) throws Throwable {
                     Object o = param.thisObject;

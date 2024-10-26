@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xposed_scope">
+        <item>com.mumu.launcher</item>
+        <item>com.mumu.store</item>
+        <item>com.android.packageinstaller</item>
+        <item>com.netease.mumu.cloner</item>
+    </string-array>
+</resources>

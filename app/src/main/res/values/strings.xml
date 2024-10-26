@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MQ</string>
+    <string name="title">如有bug反馈到:994173459</string>
+    <string name="Launcher">Launcher设置</string>
+    <string name="Launcher_AD_title">关闭桌面广告</string>
+    <string name="Launcher_AD_message">桌面会清洁很多</string>
+    <string name="Launcher_Search_title">关闭桌面搜索栏</string>
+    <string name="Launcher_Search_message">关闭桌面搜索栏</string>
+    <string name="install_title">软件包安装程序设置</string>
+    <string name="install_tg_title">自动跳过是否安装提示</string>
+    <string name="install_tg_message">自动跳过是否继续安装的提示</string>
+</resources>

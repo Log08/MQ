@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:summary="@string/title"/>
+    <PreferenceCategory android:title="@string/Launcher">
+    <SwitchPreference
+        android:title="@string/Launcher_AD_title"
+        android:key="LauncherAD"
+        android:summary="@string/Launcher_AD_message"/>
+    <SwitchPreference
+        android:title="@string/Launcher_Search_title"
+        android:key="LauncherSearch"
+        android:summary="@string/Launcher_Search_message" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/install_title">
+        <SwitchPreference
+            android:title="@string/install_tg_title"
+            android:key="installTG"
+            android:summary="@string/install_tg_message" />
+    </PreferenceCategory>
+</PreferenceScreen>

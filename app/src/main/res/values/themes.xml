@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MQ" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.MQ" parent="Base.Theme.MQ" />
+</resources>

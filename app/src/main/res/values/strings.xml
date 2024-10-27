@@ -12,4 +12,9 @@
     <string name="cloner_titie">应用分身设置</string>
     <string name="colner_show_title">显示系统App</string>
     <string name="colner_show_message">可多开浏览器,设置,图库,文件,相机,主题装扮</string>
+    <string name="browser_title">浏览器设置</string>
+    <string name="browser_swtich">启动自定义</string>
+    <string name="browser_swtich_message">启动自定义浏览器</string>
+    <string name="browser_default_title">默认链接设置</string>
+    <string name="browser_message">自定义浏览器默认打开链接</string>
 </resources>

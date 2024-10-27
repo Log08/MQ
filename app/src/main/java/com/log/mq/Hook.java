@@ -38,6 +38,7 @@ public class Hook implements IXposedHookLoadPackage {
                     case "com.android.packageinstaller" -> Install_Hook(classLoader);
                     case "com.mumu.store" -> StoreInstall_Hook(classLoader);
                     case "com.netease.mumu.cloner" -> cloner_Hook(classLoader);
+                    case "com.android.browser" -> browser_Hook(classLoader);
                 }
             }
         });
@@ -110,6 +111,17 @@ public class Hook implements IXposedHookLoadPackage {
                     if ((flags & 129) != 0) {
                         XposedHelpers.setIntField(param.thisObject, "flags", flags & ~129);
                     }
+                }
+            });
+        }
+    }
+    public void browser_Hook(ClassLoader classLoader) {
+        if (Sp.Hook_getBoolean("browserswtich")) {
+            String url = Sp.Hook_getString("browserdefault");
+            XposedHelpers.findAndHookMethod("com.android.browser.BrowserSettings", classLoader, "getFactoryResetHomeUrl", "android.content.Context", new XC_MethodHook() {
+                @Override
+                protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                    param.setResult(url);
                 }
             });
         }

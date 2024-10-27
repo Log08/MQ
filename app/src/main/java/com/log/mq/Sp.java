@@ -23,7 +23,14 @@ public class Sp {
         editor.putBoolean(key, value);
         editor.apply();
     }
+    public static void putString(String key, String value){
+        editor.putString(key, value);
+        editor.apply();
+    }
     public static Boolean Hook_getBoolean(String key){
         return xSharedPreferences.getBoolean(key, false);
+    }
+    public static String Hook_getString(String key){
+        return xSharedPreferences.getString(key, "");
     }
 }

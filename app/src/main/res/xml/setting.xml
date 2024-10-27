@@ -25,4 +25,14 @@
             android:key="colnerShow"
             android:summary="@string/colner_show_message" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/browser_title">
+        <SwitchPreference
+            android:title="@string/browser_swtich"
+            android:key="Browserswtich"
+            android:summary="@string/browser_swtich_message" />
+        <EditTextPreference
+            android:title="@string/browser_default_title"
+            android:key="Browserdefault"
+            android:summary="@string/browser_message"/>
+    </PreferenceCategory>
 </PreferenceScreen>
